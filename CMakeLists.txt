@@ -3,4 +3,5 @@ project(mastering_algos_c C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(mastering_algos_c main.c)
+add_executable(mastering_algos_c main.c
+        list.h)
