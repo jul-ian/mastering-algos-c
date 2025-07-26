@@ -36,8 +36,8 @@ int list_rem_next(List *list, ListElmt *element, void **data);
 
 #define list_is_tail(list, element) ((list)->next == NULL ? 1 : 0)
 
-#define list_data(list) ((list)->data)
+#define list_data(element) ((element)->data)
 
-#define list_next(list) ((list)->next)
+#define list_next(element) ((element)->next)
 
 #endif
