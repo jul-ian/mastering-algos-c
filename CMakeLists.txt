@@ -6,4 +6,5 @@ set(CMAKE_C_STANDARD 11)
 add_executable(mastering_algos_c main.c
         list.h
         list.c
-        dlist.h)
+        dlist.h
+        dlist.c)
