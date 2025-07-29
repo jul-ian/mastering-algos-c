@@ -7,4 +7,6 @@ add_executable(mastering_algos_c main.c
         list.h
         list.c
         dlist.h
-        dlist.c)
+        dlist.c
+        clist.h
+        clist.c)
