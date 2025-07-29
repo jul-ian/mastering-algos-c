@@ -27,7 +27,7 @@ int dlist_ins_next(DList *list, DListElmt *element, const void *data);
 
 int dlist_ins_prev(DList *list, DListElmt *element, const void *data);
 
-int dlist_remove(DList *list, DListElmt *element, const void *data);
+int dlist_remove(DList *list, DListElmt *element, void **data);
 
 #define dlist_size(list) ((list)->size)
 
