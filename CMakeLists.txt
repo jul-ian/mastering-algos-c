@@ -10,4 +10,5 @@ add_executable(mastering_algos_c main.c
         dlist.c
         clist.h
         clist.c
-        stack.h)
+        stack.h
+        stack.c)
