@@ -75,3 +75,19 @@ int chtbl_remove(CHTbl *htbl, void **data) {
     }
     return -1;
 }
+
+int chtbl_lookup(const CHTbl *htbl, void **data) {
+    ListElmt *element;
+
+    int bucket;
+
+    bucket = htbl->h(data) % htbl->buckets;
+
+    for(element = list_head(&htbl->table[bucket]); element != NULL; element = list_next(element)) {
+        if(htbl->match(*data, list_data(element))) {
+            *data = list_data(element);
+            return 0;
+        }
+    }
+    return -1;
+}
