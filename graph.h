@@ -23,7 +23,7 @@ typedef struct Graph_ {
 
 typedef enum VertexColor_ {white, gray, black} VertexColor;
 
-void graph_init(Graph *graph, int (*match)(void *key1, void *key2), void (*destroy)(void *data));
+void graph_init(Graph *graph, int (*match)(const void *key1, const void *key2), void (*destroy)(void *data));
 
 void graph_destroy(Graph *graph);
 
