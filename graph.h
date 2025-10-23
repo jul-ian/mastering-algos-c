@@ -37,7 +37,7 @@ int graph_rem_edge(Graph *graph, void *data1, void **data2);
 
 int graph_adjlist(const Graph *graph, const void *data, AdjList **adjlist);
 
-int graph_is_adjacent(Graph *graph, const void *data1, const void *data2);
+int graph_is_adjacent(const Graph *graph, const void *data1, const void *data2);
 
 #define graph_adjlists(graph) ((graph)->adjlists)
 
